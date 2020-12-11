@@ -7,7 +7,7 @@
   padding: 38px 60px;
   padding-bottom: 47px;
   background-color: #1C273D;
-  background-image: url(../img/images/banner.jpg);
+  background-image: url(../img/images/banner.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -17,4 +17,57 @@
 
 .promo__info {
   max-width: 525px;
+}
+
+.promo__top {
+  font-weight: 700;
+  font-size: 19px;
+  text-transform: uppercase;
+  
+  strong {
+    margin-right: 5px;
+    color: @blue;
+    font-weight: 900;
+  }
+}
+
+.promo__title {
+  margin-top: 23px;
+  margin-bottom: 33px;
+}
+
+.promo__btns {
+  margin-top: 47px;
+  display: flex;
+  align-items: center;
+}
+
+.promo__btn {
+  width: 266px;
+  height: 58px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.promo__code {
+  width: 144px;
+  height: 58px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 12px;
+  background-color: rgba(9,15,30,0.7);
+  .transition();
+  
+  span {
+    display: block;
+  }
+  
+  &:hover,
+  &:active {
+    background-color: rgba(9,15,30,0.5);
+    .transition();
+  }
 }
