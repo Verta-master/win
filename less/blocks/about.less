@@ -2,14 +2,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 10px;
 }
 
 .about__text {
   width: ~"calc(100% - 700px)";
+  padding-top: 20px;
   color: rgba(255,255,255,0.7);
   
   .title {
     color: #fff;
+    font-size: 40px;
+    
+    &::before {
+      top: -10px;
+      bottom: -10px;
+    }
   }
 }
 
