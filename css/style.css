@@ -524,6 +524,30 @@ h2::before,
   background: linear-gradient(90deg, #0195FF 0%, #0856C5 100%);
   border-radius: 0px 4px 4px 0px;
 }
+.title-2 {
+  font-weight: bold;
+  font-size: 15px;
+}
+.block {
+  margin-bottom: 30px;
+  padding: 30px;
+  padding-left: 26px;
+  padding-top: 20px;
+  border-radius: 12px;
+  background: -webkit-gradient(linear, left top, right top, from(#1C273D), to(#12192B));
+  background: linear-gradient(90deg, #1C273D 0%, #12192B 100%);
+}
+.block--light {
+  background: #EDF2FF;
+  color: #4D5362;
+}
+.block--light h2,
+.block--light h3,
+.block--light h4,
+.block--light .title,
+.block--light .title-2 {
+  color: #090F1E;
+}
 .wrapper {
   width: 1200px;
   padding-left: 15px;
@@ -678,6 +702,7 @@ h2::before,
 .btn {
   width: 198px;
   height: 48px;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -792,6 +817,8 @@ h2::before,
 .content .title {
   padding: 20px 26px;
   margin: 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px 12px 0px 0px;
 }
 .content .title::before {
   left: 0;
@@ -953,4 +980,173 @@ h2::before,
 }
 .codes__promo img {
   display: block;
+}
+.graph__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 58px;
+}
+.graph__text {
+  width: 365px;
+  max-width: 100%;
+  padding-top: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.graph__text .title {
+  color: #fff;
+}
+.graph__btn {
+  margin-top: 69px;
+}
+.graph__img {
+  width: 715px;
+  max-width: 100%;
+}
+.graph__img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.info__table {
+  width: 100%;
+  margin-bottom: 43px;
+  border-collapse: collapse;
+  background: #EDF2FF;
+  border-radius: 12px;
+  color: rgba(9, 15, 30, 0.7);
+  line-height: 1.1;
+}
+.info__table tr:nth-child(2n) {
+  background-color: rgba(38, 77, 174, 0.07);
+}
+.info__table td {
+  height: 56px;
+  vertical-align: middle;
+}
+.info__table td:first-child {
+  position: relative;
+  width: 365px;
+  padding: 0 20px;
+  color: #090F1E;
+  font-weight: 600;
+}
+.info__table td:first-child::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  bottom: 12px;
+  right: 0;
+  width: 3px;
+  background: -webkit-gradient(linear, left top, right top, from(#0195FF), to(#0856C5));
+  background: linear-gradient(90deg, #0195FF 0%, #0856C5 100%);
+  border-radius: 2px;
+}
+.info__table td:last-child {
+  padding-left: 44px;
+  padding-right: 20px;
+}
+.info__table a {
+  color: #0195FF;
+}
+.info__table a:hover,
+.info__table a:active {
+  text-decoration: underline;
+}
+.benefits p {
+  margin-bottom: 35px;
+}
+.benefits__btn {
+  margin-top: 50px;
+}
+.load {
+  margin-bottom: 30px;
+}
+.load .block {
+  padding: 0;
+}
+.load .title {
+  padding: 20px 26px;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px 12px 0px 0px;
+}
+.load .title::before {
+  left: 0;
+  top: 20px;
+  bottom: 20px;
+}
+.load__text {
+  max-width: 880px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.load__wrap {
+  padding: 30px;
+  padding-left: 26px;
+  background-image: url(../img/images/telephone.webp);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+.load__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 82px;
+}
+.load__item {
+  position: relative;
+  z-index: 2;
+  width: 175px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+  padding: 15px 18px;
+  border-radius: 12px;
+}
+.load__item::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 12px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0.36)));
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.36) 100%);
+  opacity: 0.1;
+  border: 2px solid #FFFFFF;
+}
+.load__btn {
+  margin-top: auto;
+  height: 32px;
+  font-size: 13px;
+  text-transform: none;
+  font-weight: 799;
+}
+.load__title {
+  margin-top: 13px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.load__text {
+  margin-bottom: 9px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.4;
 }
