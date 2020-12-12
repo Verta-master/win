@@ -87,8 +87,25 @@ h1,
 
 h2,
 .title {
+  position: relative;
+  margin-top: 0;
   font-family: 'Roboto', sans-serif;
   font-size: 28px;
   line-height: 33px;
   font-weight: 900;
+  
+  span {
+    color: @blue;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -26px;
+    width: 6px;
+    background: linear-gradient(90deg, #0195FF 0%, #0856C5 100%);
+    border-radius: 0px 4px 4px 0px;
+  }
 }
