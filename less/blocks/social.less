@@ -1,0 +1,47 @@
+.social {
+  .reset();
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.social__item {
+  margin-left: 15px;
+}
+
+.social__link {
+  display: block;
+  width: 34px;
+  height: 34px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  .transition();
+  
+  &--vk {
+    background-image: url(../img/icons/vk.svg);
+  }
+  &--wa {
+    background-image: url(../img/icons/watsapp.svg);
+  }
+  &--sk {
+    background-image: url(../img/icons/skype.svg);
+  }
+  &--in {
+    background-image: url(../img/icons/instagram.svg);
+  }
+  &--fb {
+    background-image: url(../img/icons/facebook.svg);
+  }
+  &--ok {
+    background-image: url(../img/icons/ok.svg);
+  }
+  &--tg {
+    background-image: url(../img/icons/telegram.svg);
+  }
+  
+  &:hover,
+  &:active {
+    opacity: 0.7;
+    .transition();
+  }
+}
