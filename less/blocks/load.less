@@ -1,0 +1,88 @@
+.load {
+  margin-bottom: 30px;
+  
+  .block {
+    padding: 0;
+  }
+  
+  .title {
+    padding: 20px 26px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px 12px 0px 0px;
+    
+    &::before {
+      left: 0;
+      top: 20px;
+      bottom: 20px;
+    }
+  }
+}
+
+.load__text {
+  max-width: 880px;
+  color: rgba(255,255,255,0.7);
+}
+
+.load__wrap {
+  padding: 30px;
+  padding-left: 26px;
+  background-image: url(../img/images/telephone.webp);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.load__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 82px;
+}
+
+.load__item {
+  position: relative;
+  z-index: 2;
+  width: 175px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  padding: 15px 18px;
+  border-radius: 12px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.36) 100%);
+    opacity: 0.1;
+    border: 2px solid #FFFFFF;
+  }
+}
+
+.load__btn {
+  margin-top: auto;
+  height: 32px;
+  font-size: 13px;
+  text-transform: none;
+  font-weight: 799;
+}
+
+.load__title {
+  margin-top: 13px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.load__text {
+  margin-bottom: 9px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.4;
+}
