@@ -1495,8 +1495,13 @@ h2::before,
   padding: 0;
   list-style: none;
   line-height: 1.7;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+}
+.reg__text a {
+  text-decoration: underline;
+}
+.reg__text a:hover,
+.reg__text a:active {
+  text-decoration: none;
 }
 .reg__main {
   padding: 12px 30px 30px 26px;
