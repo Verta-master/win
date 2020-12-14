@@ -1605,3 +1605,251 @@ h2::before,
 .reg__btn {
   margin-top: 77px;
 }
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 100%;
+  }
+  .header .menu__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #090F1E;
+  }
+  .menu__item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .menu__item--active::after {
+    display: none;
+  }
+  .menu__link {
+    padding: 18px 15px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .menu__btn {
+    display: block;
+    width: 36px;
+    height: 32px;
+    background-image: url(../img/icons/menu.svg);
+    background-repeat: no-repeat;
+    background-size: 22px 14px;
+    background-position: center;
+    background-color: #090F1E;
+    border-radius: 10px;
+  }
+  .menu__btn--close {
+    background-image: url(../img/icons/cross.svg);
+    background-size: 16px 16px;
+  }
+  .header .logo {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .header__user {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-left: auto;
+  }
+  .header .menu {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-left: 10px;
+  }
+  .header--menu .logo {
+    display: none;
+  }
+  .header--menu .menu {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-left: 0;
+  }
+  .promo__block {
+    padding: 20px 26px;
+  }
+  .codes__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 12px;
+  }
+  .codes__links {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .codes__btn {
+    width: 100%;
+  }
+  .codes__text {
+    width: 320px;
+    max-width: 100%;
+  }
+  .codes__promo {
+    margin-bottom: 9px;
+  }
+  .graph__img {
+    width: 500px;
+  }
+  .load__wrap {
+    background-image: url(../img/images/phone.webp);
+  }
+  .about__text,
+  .about__video {
+    width: 49%;
+  }
+  .footer__top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer .menu {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .social {
+    width: 100%;
+    margin-top: 24px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .social__item {
+    margin-left: 3px;
+    margin-right: 4px;
+  }
+}
+@media (max-width: 1022px) {
+  .promo__block {
+    background-position: right top;
+    background-size: contain;
+  }
+  .promo__info {
+    max-width: 480px;
+  }
+  .footer .menu__list,
+  .about__wrap,
+  .graph__wrap,
+  .wrapper--columns {
+    display: block;
+  }
+  .about__text,
+  .about__video,
+  .graph__text,
+  .content,
+  .codes {
+    width: 100%;
+  }
+  .codes__item {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .codes__text {
+    width: 280px;
+  }
+  .codes__links {
+    width: 198px;
+  }
+  .content__list {
+    display: none;
+  }
+  .content .title {
+    position: relative;
+  }
+  .content .title::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 9px;
+    height: 14px;
+    background-image: url(../img/icons/arrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+  }
+  .content .title--top::after {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+  }
+  .graph__img,
+  .graph__wrap,
+  .graph__btn {
+    margin-top: 29px;
+  }
+  .info__table td:first-child {
+    width: 50%;
+  }
+  .load__list {
+    position: relative;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 0;
+    padding-top: 260px;
+  }
+  .load__list::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 320px;
+    height: 583px;
+    background-image: url(../img/images/phone-mobile.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .load__item {
+    margin-left: 0;
+  }
+  .load__wrap {
+    background-image: none;
+  }
+  .footer__top {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 60px;
+    padding-bottom: 0;
+  }
+  .footer .menu {
+    margin-left: 0;
+    width: 100%;
+  }
+  .footer .menu__link {
+    padding-top: 12px;
+    padding-bottom: 17px;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .footer .menu__item:last-child {
+    border-bottom: 0;
+  }
+  .footer .logo {
+    margin-bottom: 25px;
+  }
+  .footer .social {
+    margin-top: 0;
+    position: absolute;
+    top: 105%;
+    left: 0;
+    right: 0;
+  }
+}
