@@ -1620,13 +1620,13 @@ h2::before,
     z-index: 100;
     background-color: #090F1E;
   }
-  .menu__item {
+  .header .menu__item {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   }
-  .menu__item--active::after {
+  .header .menu__item--active::after {
     display: none;
   }
-  .menu__link {
+  .header .menu__link {
     padding: 18px 15px;
     color: #fff;
     font-weight: 600;
@@ -1725,6 +1725,10 @@ h2::before,
     margin-left: 3px;
     margin-right: 4px;
   }
+  .reg__quote,
+  .reg__text {
+    width: 49%;
+  }
 }
 @media (max-width: 1022px) {
   .promo__block {
@@ -1734,12 +1738,18 @@ h2::before,
   .promo__info {
     max-width: 480px;
   }
+  .reg__item,
+  .reg__wrap,
   .footer .menu__list,
   .about__wrap,
   .graph__wrap,
   .wrapper--columns {
     display: block;
   }
+  .reg__info,
+  .reg__points,
+  .reg__quote,
+  .reg__text,
   .about__text,
   .about__video,
   .graph__text,
@@ -1854,6 +1864,21 @@ h2::before,
     left: 0;
     right: 0;
   }
+  .footer .menu__item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .footer .menu__item--active::after {
+    display: none;
+  }
+  .reg__quote {
+    margin-top: 26px;
+  }
+  .reg__points {
+    margin-top: 16px;
+  }
+  .reg__btn {
+    margin-top: 50px;
+  }
 }
 @media (max-width: 766px) {
   .wrapper {
@@ -1875,9 +1900,9 @@ h2::before,
   .promo__block {
     padding: 24px 15px;
     padding-bottom: 214px;
-    background-image: url(../img/images/bg-mobile.webp);
+    background-image: url(../img/images/bg-mobile.png);
     background-position: bottom center;
-    background-size: cover;
+    background-size: contain;
   }
   .title-main,
   h1,
@@ -2022,6 +2047,7 @@ h2::before,
     padding-top: 20px;
     padding-bottom: 26px;
   }
+  .reg__btn,
   .benefits__btn,
   .info__btn,
   .graph__btn,
@@ -2033,6 +2059,7 @@ h2::before,
   }
   .header__btn {
     width: 103px;
+    padding: 0;
   }
   .graph .block {
     padding-top: 22px;
@@ -2042,5 +2069,41 @@ h2::before,
   }
   .faq__list li {
     margin-bottom: 45px;
+  }
+  .reg__quote {
+    padding: 22px 13px;
+  }
+  .reg__main {
+    padding: 12px 16px;
+  }
+  .reg__item {
+    padding: 32px 10px;
+    margin-bottom: 10px;
+  }
+  .reg__info {
+    padding-top: 0;
+  }
+  .reg__img {
+    width: 100%;
+    height: 174px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 12px;
+  }
+  .reg__img img {
+    height: 100%;
+    width: auto;
+    max-width: none;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
   }
 }
