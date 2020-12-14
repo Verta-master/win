@@ -434,6 +434,9 @@ body {
   min-height: 100vh;
   background-color: #090F1E;
 }
+main {
+  padding-top: 90px;
+}
 .footer {
   margin-top: auto;
 }
@@ -739,7 +742,6 @@ h2::before,
   background-image: none;
 }
 .promo {
-  padding-top: 90px;
   margin-bottom: 30px;
 }
 .promo--reg .promo__title {
@@ -1176,7 +1178,7 @@ h2::before,
   height: 32px;
   font-size: 13px;
   text-transform: none;
-  font-weight: 799;
+  font-weight: 700;
 }
 .load__title {
   margin-top: 13px;
@@ -1834,7 +1836,7 @@ h2::before,
   }
   .footer .menu__link {
     padding-top: 12px;
-    padding-bottom: 17px;
+    padding-bottom: 15px;
     font-size: 13px;
     font-weight: 500;
     text-align: center;
@@ -1843,13 +1845,202 @@ h2::before,
     border-bottom: 0;
   }
   .footer .logo {
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
   .footer .social {
     margin-top: 0;
     position: absolute;
-    top: 105%;
+    top: 108%;
     left: 0;
     right: 0;
+  }
+}
+@media (max-width: 766px) {
+  .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .header {
+    padding-top: 0;
+  }
+  .comments__next,
+  .comments__prev,
+  .info__table td:first-child::after,
+  .header__link {
+    display: none;
+  }
+  main {
+    padding-top: 63px;
+  }
+  .promo__block {
+    padding: 24px 15px;
+    padding-bottom: 214px;
+    background-image: url(../img/images/bg-mobile.webp);
+    background-position: bottom center;
+    background-size: cover;
+  }
+  .title-main,
+  h1,
+  .promo__title {
+    margin-bottom: 17px;
+    margin-top: 20px;
+    font-size: 34px;
+  }
+  .title,
+  h2 {
+    margin-bottom: 13px;
+  }
+  .title::before,
+  h2::before {
+    left: -16px;
+    height: 40px;
+    bottom: auto;
+  }
+  .promo__btns {
+    display: block;
+    margin-top: 24px;
+  }
+  .btn {
+    width: 100%;
+  }
+  .promo__code {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content,
+  .promo {
+    margin-bottom: 10px;
+  }
+  .block,
+  .codes {
+    padding: 16px;
+    margin-bottom: 10px;
+  }
+  .codes__item {
+    display: block;
+    margin-top: 10px;
+  }
+  .codes__img {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .codes__title {
+    font-size: 21px;
+  }
+  .codes__links {
+    margin-top: 14px;
+    width: 100%;
+  }
+  .content .title::before {
+    top: 15px;
+  }
+  .graph__text {
+    padding-top: 0;
+  }
+  .graph__wrap {
+    margin-top: 34px;
+  }
+  .graph__text .title {
+    max-width: 200px;
+  }
+  .graph__text .title::before {
+    height: 74px;
+  }
+  .graph__img {
+    margin-top: 43px;
+  }
+  .info__table {
+    margin-top: 21px;
+    margin-bottom: 28px;
+  }
+  .info__table,
+  .info__table tbody,
+  .info__table tr,
+  .info__table td {
+    display: block;
+  }
+  .info__table td:first-child {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 5px;
+  }
+  .info__table tr {
+    padding: 8px 13px;
+  }
+  .info__table td:last-child {
+    padding: 0;
+    font-size: 13px;
+  }
+  .info__table td {
+    height: auto;
+  }
+  .load .title {
+    padding: 20px 16px;
+  }
+  .load__wrap {
+    padding: 27px 16px;
+  }
+  .load__list {
+    display: block;
+  }
+  .load__item {
+    margin-top: 10px;
+    width: 100%;
+    min-height: 350px;
+    max-width: 286px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px 30px;
+  }
+  .load__title {
+    margin-top: 21px;
+    font-size: 15px;
+  }
+  .load__btn {
+    height: 52px;
+    font-size: 21px;
+  }
+  .about__wrap {
+    padding-top: 0;
+  }
+  .about__text .title::before {
+    height: 54px;
+  }
+  .comments__slider .swiper-wrapper {
+    display: block;
+  }
+  .comments__slide {
+    margin-top: 10px;
+    padding: 29px 14px 20px 20px;
+  }
+  .comments__slide:nth-child(n + 4) {
+    display: none;
+  }
+  .comments__wrap {
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 26px;
+  }
+  .benefits__btn,
+  .info__btn,
+  .graph__btn,
+  .faq__btn {
+    width: 198px;
+  }
+  .footer {
+    padding-bottom: 10px;
+  }
+  .header__btn {
+    width: 103px;
+  }
+  .graph .block {
+    padding-top: 22px;
+  }
+  .faq .title {
+    margin-bottom: 50px;
+  }
+  .faq__list li {
+    margin-bottom: 45px;
   }
 }
