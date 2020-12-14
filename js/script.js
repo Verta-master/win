@@ -9,7 +9,8 @@ if (window.innerWidth < 1022) {
   $('.content .title').click(function() {
     $('.content__list').slideToggle();
     $(this).toggleClass('title--top');
-  })
+  });
+  $('.header__btn').text('Регистрация');
 }
 
 //Scroll to top
