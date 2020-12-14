@@ -115,8 +115,24 @@
 //--------------------------------------------
 @media (max-width: 1022px) {
   .promo__block {
-    background-position: right top;
-    background-size: contain;
+    position: relative;
+    z-index: 2;
+    background-image: url(../img/images/bg-mobile.png);
+    background-size: cover;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      width: 316px;
+      height: 231px;
+      max-width: 100%;
+      background-image: url(../img/images/bonus.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
   .promo__info {
     max-width: 480px;
@@ -277,9 +293,14 @@
   .promo__block {
     padding: 24px 15px;
     padding-bottom: 214px;
-    background-image: url(../img/images/bg-mobile.png);
-    background-position: bottom center;
-    background-size: contain;
+    
+    &::after {
+      bottom: 30px;
+      top: auto;
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%);
+    }
   }
   .title-main,
   h1,
