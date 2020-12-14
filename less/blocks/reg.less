@@ -36,7 +36,15 @@
     .reset();
     list-style: none;
     line-height: 1.7;
-    text-decoration-line: underline;
+  }
+  
+  a {
+    text-decoration: underline;
+    
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
   }
 }
 
